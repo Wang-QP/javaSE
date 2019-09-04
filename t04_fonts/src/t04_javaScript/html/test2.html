@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>banner</title>
+</head>
+<body>
+    <img id="img" src="img/banner_1.jpg" width=100%>
+<script>
+    var i = document.getElementById("img");
+    setInterval(fun,2000);
+    var index = 1;
+    function fun(){
+        i.src = "img/banner_"+(index++)+".jpg";
+        if (index > 3){
+            index = 1;
+        }
+    }
+</script>
+</body>
+</html>
